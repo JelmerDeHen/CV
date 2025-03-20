@@ -1,0 +1,194 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Adjust page layout
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\usepackage[backend=biber, style=authoryear]{biblatex}
+\addbibresource{sample.bib}
+
+% Set fonts (for XeLaTeX/LuaLaTeX; adjust for pdfLaTeX if needed)
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Define colors
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Customize fonts
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Customize bullets and rating markers
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Jelmer de Hen}
+\tagline{Security Researcher}
+\photoR{2.8cm}{jelmerdehen.png}
+
+\personalinfo{%
+  \email{jelmer@gcb.io}
+  \phone{+31 619417787}
+  \location{Netherlands}
+  \linkedin{jelmerdehen}
+  \github{JelmerDeHen}
+}
+
+\makecvheader
+
+\begin{center}
+\small
+\textcolor{emphasis}{Seasoned security researcher with over a decade of expertise in application security, red teaming, and reverse engineering.\\Specialized in mobile security and threat hunting, I have consistently identified and mitigated critical vulnerabilities including high-impact Android flaws affecting over a billion devices.}
+\end{center}
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{Head of Android R\&D}{Trail of Bits / iVerify}{2022 -- 2024}{New York, United States}
+\begin{itemize}
+\item Led the Android threat-hunting initiative, developing solutions to identify mercenary spyware on mobile devices.
+\item Directed Android malware identification efforts targeting high-profile targets in civil society and tech.
+\item Implement malware detection capabilities for Android.
+\item Development of the iVerify Android application and backend infrastructure.
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Information Technology Consultant}{Include Security}{2020 -- 2022}{New York, United States}
+\begin{itemize}
+\item Performed secure code reviews and penetration testing for Fortune 500 clients, resolving critical vulnerabilities and delivering detailed technical reports.
+\end{itemize}
+
+\divider
+
+\cvevent{Senior IT Security Researcher}{Cycura}{2015 -- 2020}{Toronto, Canada}
+\begin{itemize}
+\item Led red team operations.
+\item Conducted secure code reviews, black/whitebox engagements, incident response, exploit development, development of implants and performing physical security audits.
+\item Auditing the security of critical infrastructure in sectors such as healthcare and energy (for example a nuclear power plant).
+\end{itemize}
+
+\divider
+
+\cvevent{Founder}{General Cyber Ballistics}{2014 -- Ongoing}{Remote}
+\begin{itemize}
+\item Deliver IT security services.
+\item Perform deep security research and build tooling to assist this.
+\item Participated in Bug Bounty programs for companies such as HackerOne, Bugcrowd, and Synack having found many critical vulnerabilities over the years, and participated in and won live hacking events.
+\end{itemize}
+
+\newpage
+
+\cvevent{Forensics/eDiscovery}{Holland Integrity Group}{2011 -- 2014}{Almere, Netherlands}
+\begin{itemize}
+\item The collection, digitization, conversion (OCR), and data indexing to assist financial fraud investigations.
+\item Parsing of unknown file formats, making them usable for investigators.
+\item Supervise the digitization process of physical documents.
+\end{itemize}
+
+\divider
+
+\cvevent{Fullstack Developer}{E11EVEN}{2011 -- 2014}{Apeldoorn, Netherlands}
+\begin{itemize}
+\item Development of APO11O -- a platform to load data, index it, make it searchable, and collaboratively perform investigations.
+\item Facilitate IT security services such as penetration testing, incident response, and computer forensics.
+\end{itemize}
+
+\divider
+
+\cvevent{Content Manager}{Certified Secure}{2010 -- 2011}{The Hague, Netherlands}
+\begin{itemize}
+\item Created hacking challenges and educational content in the form of guides and videos.
+\item Research and publish interesting computer security topics with the community (such as MIFARE 4k/OV-chipkaart).
+\item Maintain activity on social channels.
+\end{itemize}
+
+\newpage
+
+\switchcolumn
+
+\cvsection{Key Skills}
+
+\cvtag{Reverse Engineering}
+\cvtag{Application Security}\\
+\cvtag{Threat Hunting}
+\cvtag{Android Security}\\
+\cvtag{Report Writing}
+\cvtag{Fuzzing}
+\cvtag{Assembly}
+\cvtag{Embedded Security}
+
+\divider\smallskip
+
+\cvsection{Programming}
+
+\cvskill{Go}{5} \smallskip
+\cvskill{PHP}{5} \smallskip
+\cvskill{JavaScript/TypeScript}{5} \smallskip
+\cvskill{SQL}{5} \smallskip
+\cvskill{Kotlin}{5} \smallskip
+\cvskill{Java}{4} \smallskip
+\cvskill{C}{4} \smallskip
+\cvskill{Python}{4} \smallskip
+\cvskill{Node.js}{4} \smallskip
+\cvskill{Smali}{3} \smallskip
+\cvskill{C++}{2}
+
+\cvsection{Languages}
+
+\cvskill{Dutch}{5} \smallskip
+\cvskill{English}{5} \smallskip
+\cvskill{French}{3} \smallskip
+\cvskill{German}{3}
+
+\pagebreak
+
+\cvsection{Honors \& Awards}
+
+\begin{itemize}
+\item Google Security Hall of Fame (Aug 2011)
+\item Barracuda Bug Bounty Hall of Fame (Mar 2013)
+\item Mozilla Web And Services Bug Bounty Hall of Fame (Nov 2013)
+\item Detectify Hall of Fame (Nov 2013)
+\item Salesforce Hall of Fame (Jan 2016)
+\end{itemize}
+
+\cvsection{HackerOne events}
+
+\begin{itemize}
+\item H1-702 2016 (2nd place)
+\item H1-415 2017
+\item H1-702 2017
+\item H1-3120 2018
+\item H1-702 2018 (1st place, team)
+\item H1-4420 2019
+\end{itemize}
+
+\end{paracol}
+
+\end{document}

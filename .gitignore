@@ -1,0 +1,7 @@
+*.pdf
+out.*
+creationdate.*
+missfont.log
+pdfa.xmpi
+.DS_Store
+*.swp
