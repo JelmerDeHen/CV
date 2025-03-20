@@ -4,7 +4,11 @@ Based on [AltaCV](https://github.com/liantze/AltaCV).
 * https://www.tug.org/mactex/mactex-download.html
 * https://fonts.google.com/specimen/Roboto+Slab
 
-`brew install exiftool`
+```sh
+brew install exiftool qpdf
+tlmgr install simpleicons
+tlmgr install fontawesome5
+```
 
 ## Arch
 ```

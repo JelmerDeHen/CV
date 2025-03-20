@@ -9,15 +9,9 @@
 \addbibresource{sample.bib}
 
 % Set fonts (for XeLaTeX/LuaLaTeX; adjust for pdfLaTeX if needed)
-\iftutex
-  \setmainfont{Roboto Slab}
-  \setsansfont{Lato}
-  \renewcommand{\familydefault}{\sfdefault}
-\else
-  \usepackage[rm]{roboto}
-  \usepackage[defaultsans]{lato}
-  \renewcommand{\familydefault}{\sfdefault}
-\fi
+\setmainfont{Roboto Slab}
+\setsansfont{Lato}
+\renewcommand{\familydefault}{\sfdefault}
 
 % Define colors
 \definecolor{SlateGrey}{HTML}{2E2E2E}
