@@ -6,24 +6,30 @@
 \usepackage{paracol}
 
 % Set fonts (for XeLaTeX/LuaLaTeX; adjust for pdfLaTeX if needed)
-\setmainfont{Roboto Slab}
+\setmainfont{Montserrat}[BoldFont={Montserrat ExtraBold}]
 \setsansfont{Lato}
 \renewcommand{\familydefault}{\sfdefault}
 
 % Define colors
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
-\definecolor{GoldenEarth}{HTML}{E7D192}
-\colorlet{name}{black}
-\colorlet{tagline}{PastelRed}
-\colorlet{heading}{DarkPastelRed}
-\colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelRed}
-\colorlet{accent}{PastelRed}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
+\definecolor{Primary}{HTML}{1c3f54}
+\definecolor{Secondary}{HTML}{328594}
+\definecolor{Extra}{HTML}{0e92a9}
+\definecolor{Text}{HTML}{666666}
+
+% Name
+\colorlet{name}{Primary}
+% Tagline
+\colorlet{tagline}{Secondary}
+% H1
+\colorlet{heading}{Primary}
+% Line under headers
+\colorlet{headingrule}{Secondary}
+% Personal fields (awesome5 icons), company names, cirlces in right column
+\colorlet{accent}{Secondary}
+% Used for titles, and right column names
+\colorlet{emphasis}{Primary}
+% Text
+\colorlet{body}{Text}
 
 % Customize fonts
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
@@ -51,7 +57,7 @@
 
 \begin{center}
 \small
-\textcolor{emphasis}{Seasoned security researcher with over a decade of expertise in application security, red teaming, and reverse engineering.\\Specialized in mobile security and threat hunting, I have consistently identified and mitigated critical vulnerabilities including high-impact Android flaws affecting over a billion devices.}
+\textcolor{body}{Seasoned security researcher with over a decade of expertise in application security, red teaming, and reverse engineering.\\Specialized in mobile security and threat hunting, I have consistently identified and mitigated critical vulnerabilities including high-impact Android flaws affecting over a billion devices.}
 \end{center}
 
 \columnratio{0.6}
@@ -63,7 +69,7 @@
 \begin{itemize}
 \item Led the Android threat-hunting initiative, developing solutions to identify mercenary spyware on mobile devices.
 \item Directed Android malware identification efforts targeting high-profile targets in civil society and tech.
-\item Implement malware detection capabilities for Android.
+\item Developed and implemented advanced malware detection capabilities for Android.
 \item Development of the iVerify Android application and backend infrastructure.
 \end{itemize}
 
@@ -87,9 +93,9 @@
 \divider
 \vspace{0.5em}
 
-\cvevent{Founder}{General Cyber Ballistics}{2014 -- Ongoing}{Remote}
+\cvevent{Founder}{General Cyber Ballistics}{2014 -- Present}{Universe, Earth}
 \begin{itemize}
-\item Deliver IT security services.
+\item Deliver IT security services such as secure code audits and penetration testing.
 \item Perform deep security research and build tooling to assist this.
 \item Contributed to Bug Bounty programs on platforms like HackerOne, Bugcrowd, and Synack, identifying many critical vulnerabilities over time. Also took part in live hacking events of HackerOne, winning a few.
 \end{itemize}

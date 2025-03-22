@@ -3,6 +3,7 @@ Based on [AltaCV](https://github.com/liantze/AltaCV).
 ## macOS
 * https://www.tug.org/mactex/mactex-download.html
 * https://fonts.google.com/specimen/Roboto+Slab
+* https://fonts.google.com/specimen/Montserrat
 
 ```sh
 brew install exiftool qpdf
